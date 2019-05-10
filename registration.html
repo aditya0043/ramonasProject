@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration </title>
+    <link rel="stylesheet" type="text/css" href="./styles/stylingsheet.css">
+</head>
+
+<body>
+<form> 
+    <h1>Create a user</h1>
+    <div>
+        <span>Full Name</span>
+        <input type="text" id="fullName">
+    </div>
+
+    <div>
+        <span>Date of Birth</span>
+        <input type="date" id="dob">
+    </div>
+
+    <div>
+        <span>Email</span>
+        <input type="text" id="email">
+    </div>
+
+    <div>
+        <span>Phone Number</span>
+        <input type="number" id="phone">
+    </div>
+
+    <div>
+        <span>Street name</span>
+        <input type="text" id="street">
+    </div>
+
+    <div>
+        <span>House Number</span>
+        <input type="text" id="houseNumber">
+    </div>
+
+    <div>
+        <span>Zip</span>
+        <input type="number" id="zip">
+    </div>
+
+    <div>
+        <span>City</span>
+        <input type="text" id="city" placeholder="Copenhagen" value="Copenhagen" disabled>
+    </div>
+    <!--we make the Cph a default city for our users, since we only deliver in CPh-->
+
+    <div>
+        <span>Username</span>
+        <input type="text" id="username">
+    </div>
+
+    <div>
+        <span>Password</span>
+        <input type="password" id="password">
+    </div>
+
+    <br>
+    <br>
+
+    <div>
+        <input type="checkbox" id="checkbox">
+        <span>I agree to the terms and conditions</span>
+    </div>
+
+    <div>
+        <input type="button" value="Complete registration" id="submit-button">
+    </div>
+
+
+    <div>
+        <button id="back-btn" onclick="location.href='frontpage.html'">Go back to frontpage</button>
+    </div>
+</form>
+
+
+    <script src="./js/user.js"></script>
+    <script src="./js/userDB.js"></script>
+    <script src="./js/registration.js"></script>
+</body>
+
+</html>
